@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box !important;
+}
+
+body {
+	background-color: #969699;
+	overflow-x: hidden !important;
+	font-family: "Segoe UI", sans-serif;
+}
+
+a {
+	color: rgb(62, 62, 161);
+	text-decoration: none;
+}
+
+.section-form {
+	margin-top: 42px;
+}
+
+.wrapper {
+	background-color: whitesmoke;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 0 30px 30px 30px;
+}
+
+.wrapper h3 {
+	font-size: 24px;
+}
+
+.form-sub label {
+	font-size: 16px;
+}
+
+.wrapper form input[type="text"],
+.wrapper form input[type="password"] {
+	height: 45px;
+	width: 100%;
+	border: 1px solid #dee0e4;
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	padding: 0 15px;
+}
+
+.wrapper form input[type="submit"] {
+	width: 100%;
+	padding: 15px;
+	margin: 0;
+	background-color: #3274d6;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	color: white;
+	transition: background-color 0.2s;
+}
+
+.wrapper form input[type="submit"]:hover {
+	background-color: #2868c7;
+	transition: background-color 0.2s;
+}
+
+.align-end {
+	float: right;
+	margin-right: 0 auto;
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+	.wrapper {
+		width: 84%;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	.wrapper {
+		width: 63%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.wrapper {
+		width: 42%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.wrapper {
+		width: 35%;
+	}
+}
